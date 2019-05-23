@@ -1,4 +1,4 @@
-import antonietta from 'antonietta';
+import antonietta from "antonietta";
 //const kennan = require("kennan");
 // Let's get some practice writing a few objects for a new group of interns at a small business.
 
@@ -72,20 +72,19 @@ console.log(intern5.gender);
 // ==== Challenge 3: Object Methods ====
 // Give Kennan the ability to say "Hello, my name is Kennan!" Use the console.log provided as a hint.
 // console.log(kennan.speak());
-const letSpeak = function() { 
+const letSpeak = function() {
   return `Hello, my name is ${this.firstname}!`;
-}
- let speak = letSpeak;
+};
+let speak = letSpeak;
 
 console.log(speak());
-
 
 // Antonietta loves math, give her the ability to multiply two numbers together and return the product. Use the console.log provided as a hint.
 //console.log(antonietta.multiplyNums(3,4));
 const multiplyNums = function(num1, num2) {
   return num1 * num2;
 };
- const antonietta.multiplyNums = multiplyNums;
+antonietta.multiplyNums = multiplyNums;
 console.log(antonietta.multiplyNums(4, 6));
 
 // === Great work! === Head over to the the arrays.js file or take a look at the stretch challenge
